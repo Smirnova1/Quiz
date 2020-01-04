@@ -1,7 +1,10 @@
 # Quiz
 
 The Quiz is realized on Laravel 6 and MySQL.
- 
+## Demo
+
+`http://simple-quizzes.herokuapp.com/`
+
 ## Official Documentation
 Documentation for the framework can be found on the [Laravel documentation](https://laravel.com/)
 
