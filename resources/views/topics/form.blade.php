@@ -19,7 +19,7 @@
     @endforeach
 @endforeach
 <div class="form-group text-right">
-    <button class="btn btn-outline-secondary" type="submit">
+    <button class="btn btn-outline-secondary btn-lg" type="submit">
         <i class="fa fa-plane" aria-hidden="true"></i>
         Submit
     </button>
