@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@index')->name('main');
+Route::get('/categories', 'CategoryController@index')->name('categories.index');
+Route::get('/categories/{id}', 'CategoryController@show')->name('categories.show');
+Route::get('/topics/{id}', 'TopicController@show')->name('topics.show');
+Route::get('/results/{id}', 'ResultController@show')->name('results.show');
+Route::post('/results', 'ResultController@store')->name('results.store');
