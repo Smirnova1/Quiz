@@ -1,7 +1,12 @@
 @extends('layouts.app')
 @section('content')
-    <div class="text-center py-5">
-        <h1 class="display-4">Welcome to Quizzes</h1>
-        <a class="display-6" href="{{route('categories.index')}}">select category</a>
+    <div class="d-flex justify-content-center position-relative">
+        <i class="fa fa-paperclip fa-5x paperclip" aria-hidden="true"></i>
+        <div class="card mt-5 sticker" style="width: 23rem; height: 23rem;">
+            <div class="card-body text-center sticker-content">
+                <h5 class=" index-text">Welcome to Quizzes</h5>
+                <a class="select-category custom-link" href="{{route('categories.index')}}">select category</a>
+            </div>
+        </div>
     </div>
 @endsection

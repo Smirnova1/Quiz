@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="card card-body">
+    <div class="px-5">
         <table class="table table-borderless">
             <thead>
             <tr>
@@ -22,7 +22,7 @@
             </tr>
             </tbody>
         </table>
-        <table class="table table-bordered">
+        <table class="table table-borderless">
             <thead>
             <tr>
                 <th scope="col">#</th>
