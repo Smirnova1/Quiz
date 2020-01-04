@@ -10,6 +10,6 @@ class Category extends Model
 
     public function topic()
     {
-        return $this->hasMany('App\Models\Topic', 'category_id', 'id');
+        return $this->hasMany('App\Models\Topic');
     }
 }

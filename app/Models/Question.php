@@ -11,12 +11,12 @@ class Question extends Model
 
     public function topic()
     {
-        return $this->hasOne('App\Models\Topic', 'id', 'topic_id');
+        return $this->hasOne('App\Models\Topic');
     }
 
     public function answers()
     {
-        return $this->hasMany('App\Models\Answer', 'question_id', 'id');
+        return $this->hasMany('App\Models\Answer');
     }
 
     public function isCorrectAnswer()

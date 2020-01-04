@@ -10,11 +10,11 @@ class Topic extends Model
 
     public function category()
     {
-        return $this->hasOne('App\Models\Topic', 'id', 'category_id');
+        return $this->hasOne('App\Models\Topic');
     }
 
     public function questions()
     {
-        return $this->hasMany('App\Models\Question', 'topic_id', 'id');
+        return $this->hasMany('App\Models\Question');
     }
 }
