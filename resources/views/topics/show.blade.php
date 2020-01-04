@@ -5,9 +5,7 @@
         <form method="POST" action="{{route('results.store')}}" accept-charset="UTF-8"
               class="form-horizontal" enctype="multipart/form-data">
             {{ csrf_field() }}
-
             @include('topics.form')
-
         </form>
 
     </div>
