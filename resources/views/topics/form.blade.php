@@ -9,7 +9,7 @@
         <div class="form-group">
             <input name="question[{{$question->id}}][]"
                    type="{{$question->type}}"
-            @if ($question->type !== 'text')value="{{$answer->answer}}"@endif>
+                   @if ($question->type !== 'text')value="{{$answer->answer}}"@endif>
             @if($question->type == 'radio')
                 <label class="form-check-label" for="{{$question->id}}">{{$answer->answer}}</label>
             @elseif($question->type == 'checkbox')

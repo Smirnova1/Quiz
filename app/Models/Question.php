@@ -21,7 +21,7 @@ class Question extends Model
 
     public function isCorrectAnswer()
     {
-        $correctCollection = $this->answers()->get()->filter(function ($value, $key){
+        $correctCollection = $this->answers()->get()->filter(function ($value, $key) {
             return $value->is_correct == true;
         });
 

@@ -18,7 +18,7 @@ class ResultSaveHelper
     public static function countScore($array)
     {
         $score = 0;
-        foreach ($array as $key => $value){
+        foreach ($array as $key => $value) {
             $question = Question::find($key);
             $value = self::arrayToString($value);
             if ($value == $question->isCorrectAnswer()) {
